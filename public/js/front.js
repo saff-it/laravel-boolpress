@@ -19360,7 +19360,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _views_App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/App */ "./resources/js/views/App.vue");
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./router */ "./resources/js/router.js");
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_router__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_3__);
 
@@ -19374,8 +19373,104 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_3___default.a({
   render: function render(h) {
     return h(_views_App__WEBPACK_IMPORTED_MODULE_1__["default"]);
   },
-  router: _router__WEBPACK_IMPORTED_MODULE_2___default.a
+  router: _router__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
+
+/***/ }),
+
+/***/ "./resources/js/pages/AboutPage.vue":
+/*!******************************************!*\
+  !*** ./resources/js/pages/AboutPage.vue ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module '!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = !(function webpackMissingModule() { var e = new Error("Cannot find module '!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/pages/AboutPage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/GalleryPage.vue":
+/*!********************************************!*\
+  !*** ./resources/js/pages/GalleryPage.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module '!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = !(function webpackMissingModule() { var e = new Error("Cannot find module '!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/pages/GalleryPage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/HomePage.vue":
+/*!*****************************************!*\
+  !*** ./resources/js/pages/HomePage.vue ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module '!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = !(function webpackMissingModule() { var e = new Error("Cannot find module '!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/pages/HomePage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
@@ -19383,10 +19478,35 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_3___default.a({
 /*!********************************!*\
   !*** ./resources/js/router.js ***!
   \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _pages_AboutPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/AboutPage */ "./resources/js/pages/AboutPage.vue");
+/* harmony import */ var _pages_GalleryPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/GalleryPage */ "./resources/js/pages/GalleryPage.vue");
+/* harmony import */ var _pages_HomePage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/HomePage */ "./resources/js/pages/HomePage.vue");
 
 
+
+
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  mode: 'history',
+  routes: [{
+    path: '/',
+    name: 'home',
+    component: _pages_HomePage__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }, {
+    path: '/about',
+    name: 'about',
+    component: _pages_AboutPage__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }, {
+    path: '/gallery',
+    name: 'gallery',
+    component: _pages_GalleryPage__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }]
+});
 
 /***/ }),
 
