@@ -10,15 +10,15 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <router-link class="nav-link active" to="/">Home</router-link>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                        <router-link class="nav-link active" to="/about">About</router-link>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <router-link class="nav-link active" to="/gallery">Gallery</router-link>
                     </li>
 
                 </ul>

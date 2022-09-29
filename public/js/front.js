@@ -2014,13 +2014,6 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
-};
-
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
   return _c("nav", {
     staticClass: "navbar navbar-expand-lg bg-light"
   }, [_c("div", {
@@ -2030,7 +2023,42 @@ var staticRenderFns = [function () {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("Boolpress")]), _vm._v(" "), _c("button", {
+  }, [_vm._v("Boolpress")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "collapse navbar-collapse",
+    attrs: {
+      id: "navbarNav"
+    }
+  }, [_c("ul", {
+    staticClass: "navbar-nav"
+  }, [_c("li", {
+    staticClass: "nav-item"
+  }, [_c("router-link", {
+    staticClass: "nav-link active",
+    attrs: {
+      to: "/"
+    }
+  }, [_vm._v("Home")])], 1), _vm._v(" "), _c("li", {
+    staticClass: "nav-item"
+  }, [_c("router-link", {
+    staticClass: "nav-link active",
+    attrs: {
+      to: "/about"
+    }
+  }, [_vm._v("About")])], 1), _vm._v(" "), _c("li", {
+    staticClass: "nav-item"
+  }, [_c("router-link", {
+    staticClass: "nav-link active",
+    attrs: {
+      to: "/gallery"
+    }
+  }, [_vm._v("Gallery")])], 1)])])])]);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("button", {
     staticClass: "navbar-toggler",
     attrs: {
       type: "button",
@@ -2042,38 +2070,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("span", {
     staticClass: "navbar-toggler-icon"
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "collapse navbar-collapse",
-    attrs: {
-      id: "navbarNav"
-    }
-  }, [_c("ul", {
-    staticClass: "navbar-nav"
-  }, [_c("li", {
-    staticClass: "nav-item"
-  }, [_c("a", {
-    staticClass: "nav-link active",
-    attrs: {
-      "aria-current": "page",
-      href: "#"
-    }
-  }, [_vm._v("Home")])]), _vm._v(" "), _c("li", {
-    staticClass: "nav-item"
-  }, [_c("a", {
-    staticClass: "nav-link active",
-    attrs: {
-      "aria-current": "page",
-      href: "#"
-    }
-  }, [_vm._v("Gallery")])]), _vm._v(" "), _c("li", {
-    staticClass: "nav-item"
-  }, [_c("a", {
-    staticClass: "nav-link active",
-    attrs: {
-      "aria-current": "page",
-      href: "#"
-    }
-  }, [_vm._v("About")])])])])])]);
+  })]);
 }];
 render._withStripped = true;
 
