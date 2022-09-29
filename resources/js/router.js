@@ -1,4 +1,8 @@
+import Vue from 'vue';
 import VueRouter from 'vue-router';
+
+
+Vue.use(VouRouter)
 
 
 import AboutPage from './pages/AboutPage';
