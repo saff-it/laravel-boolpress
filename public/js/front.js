@@ -95,7 +95,9 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {}
+});
 
 /***/ }),
 
@@ -214,7 +216,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_c("HeaderComponent"), _vm._v(">\n")], 1);
+  return _c("div", [_c("HeaderComponent"), _vm._v(" "), _c("router-view")], 1);
 };
 
 var staticRenderFns = [];

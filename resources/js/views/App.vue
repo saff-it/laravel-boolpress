@@ -1,6 +1,9 @@
 <template>
   <div>
-        <HeaderComponent/>>
+        <HeaderComponent/>
+
+        <router-view> </router-view>
+
   </div>
 </template>
 
