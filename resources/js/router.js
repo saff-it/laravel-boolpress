@@ -33,6 +33,11 @@ const router = new VueRouter({
             name: 'pageNotFound',
             component: PageNotFound
         },
+        {
+            path: '/tags',
+            name: 'tags',
+            component: TagsPage
+        },
     ]
 })
 

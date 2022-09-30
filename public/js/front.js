@@ -17974,6 +17974,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '*',
     name: 'pageNotFound',
     component: _pages_errors_PageNotFound__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }, {
+    path: '/tags',
+    name: 'tags',
+    component: TagsPage
   }]
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
