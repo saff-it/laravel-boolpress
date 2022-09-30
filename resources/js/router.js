@@ -27,6 +27,11 @@ const router = new VueRouter({
             name: 'gallery',
             component: GalleryPage
         },
+        {
+            path: '*',
+            name: 'pageNotFound',
+            component: PageNotFound
+        },
     ]
 })
 

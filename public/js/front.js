@@ -17850,6 +17850,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/gallery',
     name: 'gallery',
     component: _pages_GalleryPage__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }, {
+    path: '*',
+    name: 'pageNotFound',
+    component: PageNotFound
   }]
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
