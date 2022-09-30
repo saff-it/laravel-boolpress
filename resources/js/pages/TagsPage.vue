@@ -1,5 +1,10 @@
 <template>
-    <div>tags ciao</div>
+
+<main>
+    <ul>
+      <li v-for="tag in tags" :key="tag.id"> {{tag.name}}</li>
+    </ul>
+</main>
 
 </template>
 
