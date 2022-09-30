@@ -1989,8 +1989,34 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'TagsPage'
+  name: 'TagsPage',
+  data: function data() {
+    return {
+      tags: []
+    };
+  },
+  methods: {
+    getTags: function getTags() {
+      var _this = this;
+
+      var tagsPage = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/tags', {
+        page: tagsPage
+      }).then(function (response) {
+        console.log(response.data.results.data);
+        _this.tags = response.data.results.data;
+      })["catch"](function (error) {
+        console.error(error);
+      });
+    }
+  },
+  created: function created() {
+    this.getTags();
+  }
 });
 
 /***/ }),
