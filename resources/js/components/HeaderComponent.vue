@@ -21,6 +21,10 @@
                         <router-link class="nav-link active" to="/gallery">Gallery</router-link>
                     </li>
 
+                    <li class="nav-item">
+                        <router-link class="nav-link active" to="/tags">Tags</router-link>
+                    </li>
+
                 </ul>
             </div>
         </div>

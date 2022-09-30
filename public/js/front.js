@@ -2081,7 +2081,14 @@ var render = function render() {
     attrs: {
       to: "/gallery"
     }
-  }, [_vm._v("Gallery")])], 1)])])])]);
+  }, [_vm._v("Gallery")])], 1), _vm._v(" "), _c("li", {
+    staticClass: "nav-item"
+  }, [_c("router-link", {
+    staticClass: "nav-link active",
+    attrs: {
+      to: "/tags"
+    }
+  }, [_vm._v("Tags")])], 1)])])])]);
 };
 
 var staticRenderFns = [function () {
