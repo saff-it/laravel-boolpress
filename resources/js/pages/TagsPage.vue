@@ -17,6 +17,7 @@ export default {
 
   methods: {
     getTags(tagsPage =1){
+
       axios.get('/api/tags' , {
         page: tagsPage
       }).then((response) => {

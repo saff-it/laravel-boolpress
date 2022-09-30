@@ -24,6 +24,8 @@ class TagController extends Controller
             ]    
             
         ]);
+
+    
     }
 
     /**
