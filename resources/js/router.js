@@ -8,6 +8,7 @@ Vue.use(VueRouter)
 import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import HomePage from './pages/HomePage';
+import PageNotFound from './pages/errors/PageNotFound';
 
 const router = new VueRouter({
     mode: 'history',
