@@ -1,5 +1,6 @@
 <template>
-  
+    <div>tags ciao</div>
+
 </template>
 
 <script>

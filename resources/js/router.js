@@ -1,14 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-
 Vue.use(VueRouter)
-
 
 import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import HomePage from './pages/HomePage';
 import PageNotFound from './pages/errors/PageNotFound';
+import TagsPage from './pages/TagsPage';
 
 const router = new VueRouter({
     mode: 'history',
@@ -35,9 +34,14 @@ const router = new VueRouter({
         },
         {
             path: '/tags',
-            name: 'tags',
+            name: 'TagsPage',
             component: TagsPage
         },
+        // {
+        //     path: '/posts/:id',
+        //     name: 'SinglePost',
+        //     component: SinglePost
+        // },
     ]
 })
 
