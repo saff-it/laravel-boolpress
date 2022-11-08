@@ -46,7 +46,6 @@ class PostController extends Controller
     {
         $dataInput = $request ->all();
         
-        
         $request->validate(
             [
                 'title' =>[
@@ -54,18 +53,13 @@ class PostController extends Controller
                     'required',
                 ],
                 'post_content' => 'min:3|required',
-                'post_image' => 'image|max:999',
+                // 'post_image' => 'image|max:999',
             ]
         );
 
         $dataInput['user_id'] = Auth::id();
         $dataInput['post_date'] = new DateTime();
-
-        
-        $dataInput['post_image'] = Storage::put('uploads', $dataInput['post_image']);
-        
-
-        
+        // $dataInput['post_image'] = Storage::put('uploads', $dataInput['post_image']);
 
         $newPost = new Post();
         $newPost->fill($dataInput);
@@ -114,7 +108,7 @@ class PostController extends Controller
 
         $post = Post::findOrFail($id);
         $post->update($dataInput);
-        $dataInput['post_image'] = Storage::put('uploads', $dataInput['post_image_uploaded']);
+        // $dataInput['post_image'] = Storage::put('uploads', $dataInput['post_image_uploaded']);
        
         
         return redirect()->route('admin.posts.show', $post->id);

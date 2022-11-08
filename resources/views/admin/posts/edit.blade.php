@@ -21,10 +21,10 @@
         <input type="date" class="form-control" id="post_date" name="post_date" required>
     </div>
 
-    <div class="col-12">
+    <div class="col-12 my-3">
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
   </form>
 
-  <input type="file" name="post_image_uploaded" required>
+  {{-- <input type="file" name="post_image_uploaded"> --}}
 @endsection

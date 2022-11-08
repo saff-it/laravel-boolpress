@@ -33,11 +33,11 @@
           <input type="date" class="form-control" id="post_date" name="post_date" required>
       </div>
   
-      <div class="col-12">
+      <div class="col-12 my-3">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
 
-      <input type="file" name="post_image" required>
+      {{-- <input class="px-3" type="file" name="post_image"> --}}
   </form>
 
   

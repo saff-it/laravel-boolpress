@@ -1,9 +1,7 @@
 <template>
   <div>
         <HeaderComponent/>
-
         <router-view> </router-view>
-
   </div>
 </template>
 
